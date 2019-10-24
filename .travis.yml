@@ -2,3 +2,16 @@ language: node_js
 
 install: skip
 script: skip
+
+addons:
+  apt:
+    packages:
+      - sshpass
+
+deploy:
+  - provider: azure_web_apps
+    verbose: true
+    skip_cleanup: true
+  - provider: script
+    skip_cleanup: true
+    script: bash scripts/deploy.sh $OBSIDIAN_PASSWORD $OBSIDIAN_ADDRESS_USER
