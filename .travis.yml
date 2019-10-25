@@ -15,6 +15,3 @@ deploy:
     password: qKB8iXMqswsYbFWNklPJipmD0679AiXkkz9NuJcycBiRpyu29iuwoDGHrjue
     site: ftps://waws-prod-dm1-113dr.ftp.azurewebsites.windows.net/site/wwwroot
     skip_cleanup: true
-  - provider: script
-    skip_cleanup: true
-    script: bash scripts/deploy.sh $OBSIDIAN_PASSWORD $OBSIDIAN_ADDRESS_USER
