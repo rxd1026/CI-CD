@@ -11,6 +11,9 @@ addons:
 deploy:
   - provider: azure_web_apps
     verbose: true
+    username: rxd1026__prod\$rxd1026__prod
+    password: qKB8iXMqswsYbFWNklPJipmD0679AiXkkz9NuJcycBiRpyu29iuwoDGHrjue
+    site: ftps://waws-prod-dm1-113dr.ftp.azurewebsites.windows.net/site/wwwroot
     skip_cleanup: true
   - provider: script
     skip_cleanup: true
