@@ -13,5 +13,6 @@ deploy:
     verbose: true
     username: rxd1026__prod\$rxd1026__prod
     password: qKB8iXMqswsYbFWNklPJipmD0679AiXkkz9NuJcycBiRpyu29iuwoDGHrjue
-    site: ftps://waws-prod-dm1-113dr.ftp.azurewebsites.windows.net/site/wwwroot
+    slot: prod
+    site: rxd1026.azurewebsites.net/
     skip_cleanup: true
